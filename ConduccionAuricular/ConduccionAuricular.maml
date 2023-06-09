@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDPlusPlus_Builder_Version_1.0.0>
+  <top>
+    <components> fibraAuricular1@Fibra fibraAuricular2@Fibra </components>
+    <out> conduccion </out>
+    <out> impulso </out>
+    <in> impulso_sinusal </in>
+    <in> impulso_extra_sinusal </in>
+    <Link> impulso_sinusal impulso_in@fibraAuricular1 </Link>
+    <Link> impulso_extra_sinusal impulso_in@fibraAuricular2 </Link>
+    <Link> impulso_out@fibraAuricular1 impulso </Link>
+    <Link> impulso_out@fibraAuricular2 impulso </Link>
+    <Link> impulso_out@fibraAuricular1 impulso_in@fibraAuricular2 </Link>
+    <Link> impulso_out@fibraAuricular2 impulso_in@fibraAuricular1 </Link>
+    <Link> conduccion_out@fibraAuricular1 conduccion </Link>
+    <Link> conduccion_out@fibraAuricular2 conduccion </Link>
+  </top>
+  <fibraAuricular1>
+    <tiempoConduccion> 0:0:2:0 </tiempoConduccion>
+    <tiempoRefractario> 0:0:4:0 </tiempoRefractario>
+  </fibraAuricular1>
+</CDPlusPlus_Builder_Version_1.0.0>
